@@ -1,7 +1,7 @@
 ## Flashcards App 
 
 ### App Description
-`This app lets users view a flashcard and flip it over to the "answer" side by tapping on it. 
+This app lets users view a flashcard and flip it over to the "answer" side by tapping on it. 
 
 ### App Walk-though
 <img src="https://i.imgur.com/SJvEMxT.gif" width=300><br>
