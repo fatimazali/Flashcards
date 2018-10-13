@@ -4,10 +4,7 @@
 `This app lets users view a flashcard and flip it over to the "answer" side by tapping on it. 
 
 ### App Walk-though
-<img src="blob:https://imgur.com/8b3ea3a5-7cfa-42a3-9d0d-f484090f4de8" width=300><br>
-
-
-blob:https://imgur.com/8b3ea3a5-7cfa-42a3-9d0d-f484090f4de8
+<img src="https://i.imgur.com/SJvEMxT.gif" width=300><br>
 
 ## Required
 - [x] Create New Project in Xcode
