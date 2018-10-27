@@ -14,6 +14,7 @@
 		8D83142321728FD4001C1383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D83142121728FD4001C1383 /* LaunchScreen.storyboard */; };
 		8D83142E21728FD4001C1383 /* FlashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D83142D21728FD4001C1383 /* FlashcardsTests.swift */; };
 		8D83143921728FD4001C1383 /* FlashcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D83143821728FD4001C1383 /* FlashcardsUITests.swift */; };
+		8DFA8CBC21850CB100F867DE /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA8CBB21850CB100F867DE /* CreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8D83143421728FD4001C1383 /* FlashcardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D83143821728FD4001C1383 /* FlashcardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsUITests.swift; sourceTree = "<group>"; };
 		8D83143A21728FD4001C1383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFA8CBB21850CB100F867DE /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				8D83141821728FD2001C1383 /* AppDelegate.swift */,
 				8D83141A21728FD2001C1383 /* ViewController.swift */,
 				8D83141C21728FD2001C1383 /* Main.storyboard */,
+				8DFA8CBB21850CB100F867DE /* CreationViewController.swift */,
 				8D83141F21728FD4001C1383 /* Assets.xcassets */,
 				8D83142121728FD4001C1383 /* LaunchScreen.storyboard */,
 				8D83142421728FD4001C1383 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				8D83141B21728FD2001C1383 /* ViewController.swift in Sources */,
 				8D83141921728FD2001C1383 /* AppDelegate.swift in Sources */,
+				8DFA8CBC21850CB100F867DE /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
