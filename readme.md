@@ -7,8 +7,6 @@ This app lets users view a flashcard and flip it over to the answer side by tapp
 ### App Walk-though
 <img src=https://i.imgur.com/XUkUuih.gif width=300><br>
 
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
-
 ## Required
 - [x] User can browse through multiple flashcards
 - [x] User can re-open the app and see previously created flashcards
@@ -25,11 +23,8 @@ This app lets users view a flashcard and flip it over to the answer side by tapp
 This app lets users view a flashcard and flip it over to the "answer" side by tapping on it. They can stick to the pre-made card, or they can add their own text to both sides of the card. They can change up the text however many times that they desire. 
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
 
 <img src="https://i.imgur.com/5AuUddp.gif" width=300><br>
-
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
 
 ## Required
 - [x] User can open the creation screen
