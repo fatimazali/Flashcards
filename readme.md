@@ -3,10 +3,10 @@
 ### App Description
 This app lets users view a flashcard and flip it over to the answer side by tapping on it. They can add however many new cards they would like, and then they may flip through each of them. When they re-open the app, their old cards will still be available to study.  In this version, I added an app icon, splash screen, and multiple animations of the notecards.
 ### Splash screen and initial card animations
-<img src="http://g.recordit.co/LDdRX7yYKA.gif" width=300><br>
+<img src="http://g.recordit.co/LDdRX7yYKA.gif" width=400><br>
 
 ### App Walk-though
-<img src="http://g.recordit.co/aBmHjpOkgf.gif" width=200><br>
+<img src="http://g.recordit.co/aBmHjpOkgf.gif" width=400><br>
 
 ## Required
 - [x] User should see the app icon 
