@@ -80,39 +80,95 @@ class ViewController: UIViewController {
             updateNextPrevButtons()
         }
         
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction func didTapOnFlashcard(_ sender: Any) {
-        //QuestLabel.isHidden = false;
-
-         if (QuestLabel.isHidden){// if QuestLabel is hidden, make it visible. otherwise, hide it.
-         QuestLabel.isHidden = false;
-         }
-         else{
-         QuestLabel.isHidden = true;
-         }
+        flipFlashcard()
       
+    }
+    
+    
+    func flipFlashcard() {
+        
+        UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight, animations: {
+            if (self.QuestLabel.isHidden){// if QuestLabel is hidden, make it visible. otherwise, hide it.
+                self.QuestLabel.isHidden = false;
+            }
+            else{
+                self.QuestLabel.isHidden = true;
+            }
+        })
+        //QuestLabel.isHidden = false;
+        
+
+    }
+    
+    func animateCardOutPrev() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        }, completion: { finished in
+            
+            // update labels
+            self.updateLabels()
+            
+            // run the other animation
+            self.animateCardInPrev()
+            
+        })
+        
+    }
+    
+    func animateCardOutNext() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        }, completion: { finished in
+            
+            // update labels
+            self.updateLabels()
+
+            // run the other animation
+            self.animateCardInNext()
+            
+        })
+        
+    }
+    func animateCardInPrev() {
+        
+        // starting the card on the right side of the screen, without animation
+        card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        
+        // resetting the transform to have no transform, so we use set it to the identity transform. must start on the right side, still
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity
+        }
+    }
+    
+    func animateCardInNext() {
+        
+            // starting the card on the right side of the screen, without animation
+            card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        
+            // resetting the transform to have no transform, so we use set it to the identity transform. must start on the right side, still
+            UIView.animate(withDuration: 0.3) {
+                self.card.transform = CGAffineTransform.identity
+            }
     }
 
     @IBAction func didTapOnPrev(_ sender: Any) {
         currentIndex -= 1
-        // update labels
-        updateLabels()
-        
         // update buttons
         updateNextPrevButtons()
+        // animate different stacks of cards during movement
+        animateCardOutPrev()
     }
     @IBAction func didTapOnNext(_ sender: Any) {
         // update currentIndex
         currentIndex += 1
         
-        // update labels
-        updateLabels()
-        
         // update buttons
         updateNextPrevButtons()
+        // animate different stacks of cards during movement
+        animateCardOutNext()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
